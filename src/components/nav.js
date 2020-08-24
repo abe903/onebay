@@ -9,7 +9,7 @@ function Nav() {
                 <li><a href="/">home</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="/events">Events</a></li>
-                <li><a href="/events">Donate</a></li>
+                <li><a href="/donate">Donate</a></li>
             </ul>
         </nav>
     )
