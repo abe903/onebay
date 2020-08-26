@@ -6,21 +6,22 @@ import Home from './components/home';
 import About from './components/about';
 import Events from './components/events';
 import Donate from './components/donate';
+import Admin from './components/admin';
 
 function App() {
   return (
     <Fragment>
       <BrowserRouter>
-        <Nav />
+        <Nav/>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/events" component={Events} />
           <Route exact path="/donate" component={Donate} />
+          <Route exact path="/admin" component={Admin} />
         </Switch>
       </BrowserRouter>
     </Fragment>
-    
   );
 }
 
