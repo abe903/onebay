@@ -4,7 +4,7 @@ import '../css/nav.css'
 function Nav() {
     return (
         <nav>
-            <h2>ONE.BAY</h2>
+            <h3>ONE.BAY</h3>
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
