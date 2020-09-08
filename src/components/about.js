@@ -5,6 +5,7 @@ function About() {
     return (
         <div>
             <h1>Hello Welcome to One Bay 2020</h1>
+            <h2>Our Leadership Team</h2>
         </div>
     )
 }
