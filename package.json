@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/abe903/onebay-react/issues"
   },
-  "homepage": "https://github.com/abe903/onebay-react#readme"
+  "homepage": "https://github.com/abe903/onebay-react#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5"
+  }
 }
