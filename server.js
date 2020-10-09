@@ -57,3 +57,7 @@ app.post('/login',(req, res) => {
       res.redirect('/');
     }); 
 })
+
+app.get('/signup',(req, res) => {
+    res.render('signup')
+});
