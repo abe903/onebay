@@ -1,3 +1,11 @@
 #ministry-logo {
     width: 200px;
 }
+
+#outer-box {
+    background-color: yellow;
+}
+
+#nav-box {
+    opacity: 0;
+}
