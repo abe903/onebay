@@ -34,13 +34,25 @@
       </nav>
     </div>
     <div class="container" id="login-form">
-      <div class="jumbotron">
-        <h1 class="display-4">ADMIN PAGE</h1>
-        <hr class="my-4">
-        <p class="lead">
-          <a class="btn btn-primary btn-lg" href="/search" role="button">Search Events</a>
-        </p>
-      </div>
+        <form action="/addevent" method="post">
+          <div class="form-group">
+              <label for="InputName">Name</label>
+              <input type="name" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter name" name="name">
+          </div>
+          <div class="form-group">
+              <label for="InputPassword">Description</label>
+              <input type="description" class="form-control" id="exampleInputPassword" placeholder="Enter Password" name="password">
+          </div>
+          <div class="form-group">
+              <label for="InputPassword">Date</label>
+              <input type="description" class="form-control" id="InputDate" placeholder="Enter Date" name="date">
+          </div>
+          <div class="form-group">
+              <label for="InputPassword">Location</label>
+              <input type="description" class="form-control" id="InputLocation" placeholder="Enter Location" name="location">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </div>
   </body>
 </html>
