@@ -77,3 +77,8 @@ app.get('/admin',(req, res) => {
         id: id
     });
 });
+
+app.post("/addevent", (req, res) => {
+    console.log(req.body);
+    res.redirect('/admin');
+})

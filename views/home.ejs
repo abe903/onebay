@@ -9,40 +9,57 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel='stylesheet' href='/styles.css' />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   </head>
   <body>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light static-top" id="navigation">
+          <div class="container">
+            <a class="navbar-brand" href="/">
+              <img src="logo.png" id="ministry-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/search">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/search">Events</a>
+                </li>
+                <li class="nav-item" id="signup">
+                    <a class="nav-link" href="/search">Sign up</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
     <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
-        <div class="container">
-          <a class="navbar-brand" href="/">
-            <img src="logo.png" id="ministry-logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="/">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/search">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/search">Events</a>
-              </li>
-            </ul>
+      <div class="row">
+        <div class="col-sm-6" id="event-card">
+          <div class="card" id="left">
+            <div class="card-body" id="left-card">
+              <h2 class="card-title">One Bay Retreat 2020<br>Online Meetup</h2>
+            </div>
+            <a class="nav-link" id="signup-button" href="/search">Retreat Sign up</a>
           </div>
         </div>
-      </nav>
-    </div>
-    <div class="container" id="login-form">
-      <div class="jumbotron">
-        <h1 class="display-4">Retreat 2020</h1>
-        <p class="lead">
-          <a class="btn btn-primary btn-lg" href="/search" role="button">Sign Up</a>
-        </p>
+        <div class="col-sm-6" id="event-svg">
+          <div class="card" id="right-card">
+            <div class="card-body" id="right-svg">
+              <img src="gummy-coffee.png" id="svg-logo">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  <div class="container">
+  </div>
   </body>
 </html>

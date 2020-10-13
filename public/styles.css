@@ -9,3 +9,86 @@
 #nav-box {
     opacity: 0;
 }
+
+#outer {
+    background-color: blue;
+    padding-bottom: 300px;
+    background-image: src="tugboat.jpg";
+}
+
+#navigation {
+    background-color: transparent !important;
+}
+
+#login-form {
+    background-color: transparent !important;
+}
+
+#ministry-logo {
+    width: 150px;
+}
+
+#outer-box {
+    background-color: yellow;
+}
+
+#nav-box {
+    opacity: 0;
+}
+
+#navigation {
+    background-color: transparent !important;
+}
+
+#login-form {
+    background-color: transparent !important;
+}
+
+#signup {
+    border-style: cornflowerblue solid;
+    background-color: cornflowerblue;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+
+#signup a {
+    color: white;
+}
+
+#svg-logo {
+    width:500px;
+}
+
+#right-card {
+    border: none;
+}
+
+#left-card {
+    border: none;
+}
+
+#left h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    border: none;
+    padding-top: 100px;
+    font-size: 50px;
+}
+
+#left {
+    border: none;
+}
+
+#signup-button {
+    border-style: cornflowerblue solid;
+    background-color: cornflowerblue;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 30%;
+    color: white;
+    border-radius: 5px;
+    letter-spacing: .5px;
+}
