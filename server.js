@@ -78,7 +78,8 @@ app.get('/admin',(req, res) => {
     });
 });
 
-app.post("/addevent", (req, res) => {
-    console.log(req.body);
+app.post("/addchurch", (req, res) => {
+    let edata = { name: req.body.name, church: req.body.church, guests: req.body.guests, email: req.body.email}
+    console.log(edata);
     res.redirect('/admin');
 })
