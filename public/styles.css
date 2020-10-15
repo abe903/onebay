@@ -92,3 +92,11 @@
     border-radius: 5px;
     letter-spacing: .5px;
 }
+
+#the-events {
+    background-color: orange;
+}
+
+#events-outer {
+    background-color:orange;
+}
