@@ -81,5 +81,9 @@ app.get('/admin',(req, res) => {
 app.post("/addchurch", (req, res) => {
     let edata = { name: req.body.name, church: req.body.church, guests: req.body.guests, email: req.body.email}
     console.log(edata);
-    res.redirect('/admin');
+    let sql = "INSERT INTO retreat SET ?";
+    connection.query(sql, edata,(err) => {
+        if(err) throw err;
+        res.redirect('/');
+    }); 
 })
