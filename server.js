@@ -33,7 +33,16 @@ app.listen(3000, () => {
 });
 
 app.get('/',(req, res) => {
-    res.render('home')
+    let sql = 'SELECT * FROM events';
+    connection.query(sql, (err, results) => {
+        if (err){
+            console.log(err)
+        }
+        console.log(results)
+        res.render("home", {
+            results: results
+        });
+    }); 
 })
 
 app.get('/register',(req, res) => {
@@ -87,3 +96,14 @@ app.post("/addchurch", (req, res) => {
         res.redirect('/');
     }); 
 })
+
+app.post("/addevent/:id", (req, res) => {
+    console.log(req.body.id);
+    let edata = { name: req.body.name, description: req.body.description, date: req.body.date, location: req.body.location, adminID: req.params.id}
+    let sql = "INSERT INTO events SET ?";
+    connection.query(sql, edata,(err) => {
+        if(err) throw err;
+        res.redirect('/');
+    }); 
+})
+
